@@ -34,7 +34,7 @@ def array_to_user_hash_converter file_array
 end
 
 def valid_credit_card? credit_card_number   
-  return false if credit_card_number.length > 19 && credit_card_number.length < 10
+  return false if credit_card_number.length > 19 
   valid_credit_card_using_luhn_algo credit_card_number  
 end
 
